@@ -8,6 +8,76 @@
     <title>To Do App</title>
 </head>
 <body>
-    
+    <header>
+        <section>
+            <p>TO-DO</p>
+            <p>Organize your day, one task at a time</p>
+        </section>
+        <section>
+            <div class="add-btn">
+                <p>Add Task</p>
+                <img src="icons/plus.svg" alt="add-icon">
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="task">
+            <div class="title one">
+                <p>Task</p>
+            </div>
+            <div class="item item1">
+                <p>Mid Term Quiz</p>
+            </div>
+        </div>
+        <div class="course">
+            <div class="title two">
+                <p>Course</p>
+            </div>
+            <div class="item item1">
+                <p>Math 111</p>
+            </div>
+        </div>
+        <div class="deadline">
+            <div class="title three">
+                <p>Deadline</p>
+            </div>
+            <div class="item item1">
+                <p>11.12.2024</p>
+            </div>
+        </div>
+        <div class="checkmarks">
+            <div class="title">
+
+            </div>
+            <div class="item item1">
+                <input type="checkbox" name="" id="">
+            </div>
+            
+        </div>
+    </main>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="closeBtnDiv">
+            <span class="close">&times;</span>
+          </div>
+          <div class="addForm">
+            <div class="taskName">
+                <label for="task">Task</label>
+                <input type="text" name="task" id="taskField">
+            </div>
+            <div class="courseName">
+                <label for="course">Course</label>
+                <input type="text" name="course" id="courseField">
+            </div>
+            <div class="deadlineName">
+                <label for="deadline">Deadline</label>
+                <input type="date" name="deadline" id="deadlineField">
+            </div>
+            <button class="addTaskForm">Add Task</button>
+          </div>
+        </div>
+      
+    </div>
 </body>
 </html>

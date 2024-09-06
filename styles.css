@@ -2,4 +2,219 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Hubot Sans';
 }
+
+.add-btn > img {
+    width: 30px;
+}
+
+header > section > p:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header > section > p + p {
+    font-size: 1.25rem;
+}
+
+.add-btn {
+    display: flex;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #038AFF;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 1.15rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: linear-gradient(-45deg, #62cff4, #2c67f2);
+    background-size: 200% 200%;
+    animation: GradientBackground 3s ease infinite;
+}
+
+.add-btn > p {
+    margin-right: 10px;
+    color: white;
+}
+
+header > section + section {
+    width: 15%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task {
+    width: 31.5%;
+}
+
+.course {
+    width: 27.5%;
+}
+
+.deadline {
+    width: 27.5%;
+}
+
+.checkmarks {
+    width: 11.5%;
+}
+
+.title {
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+.one {
+    background-color: #6D3580;
+}
+.two {
+    background-color: #CC4165;
+}
+.three {
+    background-color: #E4734F;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+    margin-top: 5px;
+}
+
+.checkmarks > div {
+    box-shadow: none;
+}
+
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    accent-color: #FFE26F
+}
+
+.add-btn:hover {
+    transform: translate(2%, 2%);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    padding-bottom: 25px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+  
+  /* The Close Button */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeBtnDiv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.addForm > div {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 4px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input[type="date"] {
+    padding: 4px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.addTaskForm {
+    display: block;
+    padding: 10px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(-45deg, #62cff4, #2c67f2);
+    background-size: 200% 200%;
+    animation: GradientBackground 3s ease infinite;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@keyframes GradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+};
+
+
