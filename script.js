@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("todo", JSON.stringify([]));
     }
     addTaskToUI();
+    checkIfDeadlinePassed();
 });
 
 addBtn.addEventListener("click", () => {
