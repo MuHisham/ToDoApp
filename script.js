@@ -73,7 +73,12 @@ function addTaskToUI() {
     }   
 }
 
-document.addEventListener("DOMContentLoaded", addTaskToUI);
+document.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem("todo") == null) {
+        localStorage.setItem("todo", JSON.stringify([]));
+    }
+    addTaskToUI();
+});
 
 addBtn.addEventListener("click", () => {
     modalBox.style.display = "block";
